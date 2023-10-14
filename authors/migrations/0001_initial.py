@@ -12,15 +12,13 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Book',
+            name='Author',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=255)),
-                ('num_of_pages', models.IntegerField()),
-                ('date_of_publication', models.DateField(default='1999-10-10')),
+                ('name', models.CharField(max_length=255)),
             ],
             options={
-                'db_table': 'books',
+                'db_table': 'authors',
             },
         ),
     ]

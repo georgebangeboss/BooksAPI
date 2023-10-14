@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import get_authors,get_books
+from .views import create_book,get_all_books
 
 urlpatterns = [
-    path('get-books',get_books),
-    path('get-authors',get_authors),
+    path('create-book',create_book),
+    path('get-all-books',get_all_books)
 ]
